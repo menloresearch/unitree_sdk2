@@ -1,6 +1,7 @@
 # IDE
 .vscode
 .ccls
+compile_commands.json
 
 # cpp
 build

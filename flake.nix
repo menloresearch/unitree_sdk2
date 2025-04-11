@@ -12,6 +12,7 @@
       in pkgs.mkShell {
         buildInputs = with pkgs; [
           ccls 
+          bear
 
           gcc
           cmake 
@@ -23,7 +24,8 @@
 
         LD_LIBRARY_PATH="${pkgs.stdenv.cc.cc.lib}/lib";
         shellHook = ''
-         alias build_sdk="cd build && cmake .. -DCMAKE_INSTALL_PREFIX=./bin && make -j8 && cd .."
+         alias build_sdk="cd build && cmake .. -DCMAKE_INSTALL_PREFIX=./bin \
+         && bear -- make -j8 && mv compile_commands.json ../. && cd .."
         '';
       };
     };
