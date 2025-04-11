@@ -9,8 +9,6 @@ Currently, only x86 is supported.
 
 ### Build examples
 
-To build the examples inside this repository:
-
 ```bash
 mkdir build
 build_sdk
