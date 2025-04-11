@@ -17,12 +17,5 @@ build_sdk
 ```
 > build_sdk currently runs make -j8
 
-### Installation
-
-```bash
-mkdir build
-install_sdk
-```
-> installation directory is at build/bin
 
 
