@@ -1,6 +1,6 @@
 # IDE
 .vscode
-.ccls
+.ccl-cache
 compile_commands.json
 
 # cpp
