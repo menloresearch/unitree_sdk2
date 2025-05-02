@@ -1,0 +1,9 @@
+<CycloneDDS>
+  <Domain id="any">
+    <General>
+      <Interfaces>
+        <NetworkInterface name="enp5s0f3u1u1" address="192.168.123.222"></NetworkInterface>
+      </Interfaces>
+    </General>
+  </Domain>
+</CycloneDDS>

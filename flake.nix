@@ -20,12 +20,14 @@
           gdb
             
           eigen
+          cyclonedds
         ];
 
         LD_LIBRARY_PATH="${pkgs.stdenv.cc.cc.lib}/lib";
         shellHook = ''
          alias build_sdk="cd build && cmake .. -DCMAKE_INSTALL_PREFIX=./bin \
          && bear -- make -j8 && mv compile_commands.json ../. && cd .."
+         export CYCLONEDDS_URI=$PWD/cyclonedds.xml
         '';
       };
     };
